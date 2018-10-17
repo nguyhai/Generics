@@ -10,18 +10,21 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            MyList<int> myIntList = new MyList<int>();
+            MyList<int> firstIntList = new MyList<int>();
+            MyList<int> secondIntList = new MyList<int>();
+            MyList<int> result = firstIntList + secondIntList;
 
-            myIntList.Add(1);
-            myIntList.Add(1);
-            myIntList.Add(1);
-            myIntList.Add(1);
-            myIntList.Add(1);
 
-            Console.WriteLine(myIntList.Capacity);
-            Console.WriteLine(myIntList.Count);
+            firstIntList.Add(1);
+            firstIntList.Add(1);
+            firstIntList.Add(1);
+            firstIntList.Add(1);
+            firstIntList.Add(1);
 
-            Console.WriteLine(myIntList[0]); // You got an indexer added, so now we can get the number. Holy crap that is cool
+            Console.WriteLine(firstIntList.Capacity);
+            Console.WriteLine(firstIntList.Count);
+
+            Console.WriteLine(firstIntList[0]); // You got an indexer added, so now we can get the number. Holy crap that is cool
 
             
 

@@ -51,7 +51,23 @@ namespace Generics
             Count++;
         }
 
+        public static MyList<T> operator +(MyList<T> list1, MyList<T> list2)
+        {
+            MyList<T> result = new MyList<T>();
 
+            if (list1.Count != list2.Count)
+            {
+                throw new InvalidOperationException("Lists are of different sizes!");
+            }
+            else
+            {
+                for (int i = 0; i < list1.Count; i++)
+                {
+                    result.Add((dynamic)list1[i] + list2[i]);
+                }
+            }
+            return result;
+        }
 
     }
 }

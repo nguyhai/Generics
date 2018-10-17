@@ -10,6 +10,9 @@ namespace Generics
     {
         static void Main(string[] args)
         {
+
+            // Bascially, generic methods and classes can take multiple types
+
             int[] array = { 1, 4, 23, 5, 25, 315, 235, 235, 23, 52, 1, 412, 3 };
             string[] stringArray = { "agasjkfs", "bsdfsdafasd", "csdfsafdsa", "dfafds" };
 
